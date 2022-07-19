@@ -57,6 +57,7 @@ contract C {
 
     // 注意: 若想将固定大小数组转string，那么需要先将字节数组转为动态字节数组，再转字符串;
     // abi.encodePacked("tankjam") ---> 得到tankjam对应的bytes字节数组
+    // https://tool.lu/hexstr/ 转换网站
     bytes7 b = 0x74616e6b6a616d;  // bytes1~32根据字符串的长度来定  tankjam 长度为7
     function byte32ToString() view public returns (string memory){
         // 1.初始化动态字节数组
